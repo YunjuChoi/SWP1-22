@@ -5,7 +5,10 @@ def application(environ, start_response):
         '%s: %s' % (key, value) for key, value in sorted(environ.items())
     ]
     response_body = '\n\n'.join(response_body)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 45037d8f3ca66086282af260cbdaaa1520b0abe3
     status = '200 OK'
     response_headers = [
         ('Content-Type', 'text/plain'),
